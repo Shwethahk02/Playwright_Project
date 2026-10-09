@@ -11,6 +11,7 @@ class Register{
       this.emailTextield = page.locator('//input[@data-qa="signup-email"]')
       this.signupButton = page.getByRole("button",{name:"Signup"})
       this.accountInfoText = page.locator('//b[text()="Enter Account Information"]')
+      this.maleRadioButton = page.locator('#uniform-id_gender1')
     }
 
     async goto(url){
